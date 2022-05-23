@@ -1,32 +1,4 @@
-
-var cartContainer = document.createElement("div")
-cartContainer.classList.add("myBooks");
-document.getElementsByTagName('body')[0].prepend(cartContainer);
-
-var container = document.createElement("div")
-container.classList.add('content-container');
-document.getElementsByTagName('body')[0].prepend(container);
-
-var cartTitle =document.createElement("h3")
-cartTitle.className= "cart-title";
-cartTitle.textContent = "Selected Books"
-cartContainer.appendChild(cartTitle)
-
-var cartBtn = document.createElement("button")
-cartBtn.className ="buyButton"
-cartContainer.appendChild(cartBtn)
-cartBtn.textContent = "buy now";
-
-let formi = document.getElementsByClassName("delivery-form")
-
-    cartBtn.onclick = function() {
-        formi[0].style.display = "block";
-        console.log(formi);
-    }
-    
-
-
-fetch("./assets/JSON.json")
+     fetch("./assets/JSON.json")
     .then(response =>{
         if(!response.ok){
             throw Error("ERROR")
@@ -45,26 +17,25 @@ fetch("./assets/JSON.json")
             var mainDiv = document.createElement("div")
             mainDiv.classList= "main-div"
             wrap.appendChild(mainDiv);
-            // document.getElementsByTagName("body")[0].appendChild(mainDiv);
             container.appendChild(mainDiv)
 
 
-            // main div
+            
             var div = document.createElement("div")
             div.id = "book-card";
             div.className = "Book-card";
             mainDiv.appendChild(div)
-            // inner div
+         
             var leftDiv = document.createElement("div")
             leftDiv.className = "Left-wrap";
             div.appendChild(leftDiv)
             
-            // left-side of book
+           
             var img = document.createElement("img")
             img.className = "bookImg";
             img.src = `${apiData.imageLink}`;
             leftDiv.appendChild(img);
-            // right side of book
+       
             var rightDiv = document.createElement("div")
             rightDiv.className = "rightWrap"
             div.appendChild(rightDiv)
@@ -85,7 +56,7 @@ fetch("./assets/JSON.json")
             rightDiv.appendChild(h4)
             h4.innerHTML = ` ${apiData.price}` + " $"
             
-            // button section
+            
 
             var buttonDiv = document.createElement("div");
             buttonDiv.className = "button-div";
@@ -102,7 +73,7 @@ fetch("./assets/JSON.json")
             addCartBtn.textContent = "add To Cart";
             buttonDiv.appendChild(addCartBtn);
 
-               // Modal section 
+              
     
             var modal = document.createElement("div");
             modal.className = "modal";
@@ -138,7 +109,7 @@ fetch("./assets/JSON.json")
             close.textContent= "X"
             modalContent.appendChild(close);
 
-            // button click
+        
        
                     
             showMoreBtn.onclick = function(){
@@ -188,6 +159,31 @@ fetch("./assets/JSON.json")
             }
         })
     })
+
+    var cartContainer = document.createElement("div")
+cartContainer.classList.add("myBooks");
+document.getElementsByTagName('body')[0].prepend(cartContainer);
+
+var container = document.createElement("div")
+container.classList.add('content-container');
+document.getElementsByTagName('body')[0].prepend(container);
+
+var cartTitle =document.createElement("h3")
+cartTitle.className= "cart-title";
+cartTitle.textContent = "Selected Books"
+cartContainer.appendChild(cartTitle)
+
+var cartBtn = document.createElement("button")
+cartBtn.className ="buyButton"
+cartContainer.appendChild(cartBtn)
+cartBtn.textContent = "buy now";
+
+let formi = document.getElementsByClassName("delivery-service")
+
+    cartBtn.onclick = function() {
+        formi[0].style.display = "block";
+        console.log(formi);
+    }
 
 
 function checkboxFunc() {

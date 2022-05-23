@@ -150,13 +150,13 @@ body{
    
 }
 
-.delivery-form{
+.delivery-service{
     width: 600px;
     height: 800px;
     border: 1.5px solid rgb(51, 54, 80);
     background-color:rgb(48, 195, 221);
     margin-top: 20px;
-    
+    display: none;
 
 }
 .buyButton{
@@ -292,7 +292,7 @@ h1{
     margin-bottom: 20px;
     
 }
-.delivery-form{
+.delivery-service{
     display: none;
 }
 .cart-div{
