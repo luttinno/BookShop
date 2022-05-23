@@ -1,0 +1,328 @@
+body{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+
+}
+.bookImg{
+    margin: 20px;
+    width: 80%;   height: 85%;
+    transform: perspective(1000px) rotateY(0deg) ;
+    transition: .5s; 
+    box-shadow: 0 25px 15px rgb(0 0 0 / 50%);
+    background-color:rgb(11, 11, 11);
+    opacity:1;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.Book-card{
+    display: flex;
+    max-width: 600px;
+    border: 2px solid rgb(51, 54, 80);
+    border-radius: 10px;
+    margin: 50px 15px;
+    background-color: rgb(48, 195, 221);
+}
+.Left-wrap {
+    width: 300px;
+}
+.rightWrap{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 3px solid rgb(51, 54, 80);
+    
+}
+
+.h3{
+    padding-top: 10%;
+    padding-bottom: 25%;
+    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.h4{
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+    
+}
+.button-div{
+    display: flex;
+    margin-top: 50px;
+}
+.showMoreBtn{
+    border-color:rgb(51, 54, 80);
+    color: rgb(51, 54, 80);
+    width:100px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 20px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    font-size:15px;
+
+}
+.showMoreBtn:hover{
+    background-color: rgb(51, 54, 80);
+    color: #FFFFFF;
+
+}
+.add-cart-btn{
+    border-color: rgb(51, 54, 80);
+    width: 100px;
+    height: 30px;
+    color: rgb(51, 54, 80);
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    font-size: 15px;
+}
+.add-cart-btn:hover{
+    background-color: rgb(51, 54, 80);
+    color: #FFFFFF;
+}
+
+
+
+.modal{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 1000%;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    position: fixed;
+   
+}
+.modal-content{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    background-color: rgb(255, 254, 254);
+    margin-top: 200px;
+    margin-left: 100px;
+
+}
+.modal-right-wrap{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.modal-img{
+    width: 150px;
+}
+.modal-title{
+    font-size: 28px;
+    padding-top: 20px;
+    font-weight: bolder;
+}
+.modal-text{
+    font-size: 20px;
+    max-width: 700px;
+    padding-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 22px;
+    letter-spacing: 0.05rem;
+}
+.close{
+    font-size: 40px;
+    color: rgb(51, 54, 80);
+    cursor: pointer;
+}
+.myBooks{
+    width: 600px;
+    height: auto;
+    position: relative;
+    margin-top: 5px;
+   
+}
+
+.delivery-form{
+    width: 600px;
+    height: 800px;
+    border: 1.5px solid rgb(51, 54, 80);
+    background-color:rgb(48, 195, 221);
+    margin-top: 20px;
+    
+
+}
+.buyButton{
+    color: rgb(51, 54, 80);
+    width: 150px;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: rgb(48, 195, 221);
+    border:none;
+    border-radius: 100px;
+}
+
+/* form styles */
+.form-order{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.info-field{
+    border: 3px solid rgb(113, 185, 223);
+    border-radius: 6px;
+    display: flex;
+   flex-direction: column;
+   margin: 10px;
+
+}
+.info-field legend {
+    font-size: 30px;
+    margin-left: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.orders{
+    display: grid;
+    grid-template-columns: 115px 1fr;
+    align-items: center;
+    padding-bottom: 15px; 
+}
+
+.field input {
+    border: none;
+    background-color: #f7f5f5;
+    height: 30px;
+    font-size: 15px;
+    padding-left: 20px;
+}
+.field label {
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+#date{
+    max-width: 150px;
+}
+
+/* payment from */
+.payment-input{
+    border: 3px solid rgb(113, 185, 223);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.payment-input legend {
+    font-size: 30px;
+    margin-left: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.payment-wrap{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.payment-type {
+    width: 25px;
+    height: 25px;
+}
+.payment-wrap label {
+    font-size: 15px;
+}
+/* gift styles */
+.gift-wrap{
+    border:3px solid rgb(113, 185, 223);
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 5px;
+    align-items: center;
+    margin: 10px;
+}
+.gift-wrap legend{
+    font-size: 30px;
+    margin-left: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.gift-wrap label{
+    font-size: 20px;
+    padding-left: 20px;
+    width: 200px;
+}
+.gift-wrap input {
+    height: 25px;
+    width: 25px;
+    margin-left: 150px;
+}
+#register{
+    width:150px;
+    height: 30px;
+    margin-left: 35%;
+    cursor: pointer;
+    border-radius: 10px;
+    border-color: #FFFFFF;
+    background-color: rgb(48, 195, 221);
+    
+  
+}
+.buyButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.delivery-form{
+    display: none;
+}
+.cart-div{
+    width: 500px;
+    height: 150px;
+    border: 1px rgb(51, 54, 80);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(48, 195, 221);
+}
+.cart-price{
+    color: #1a1919;
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+
+}
+.Xcard{
+    font-size: 25px;
+    color: rgb(51, 54, 80);
+    font-weight: bolder;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.cart-main-div{
+    display:none;
+}
+.cart-title{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}

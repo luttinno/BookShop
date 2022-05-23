@@ -1,0 +1,71 @@
+[{
+    "author": "Shota Rustaveli",
+    "imageLink": "./assets/image/1.jpg",
+    "title": "Lord of the panther Skin",
+    "price": 15.99,
+    "description": "literally one with a skin of a tiger) is a Georgian medieval epic poem, written in the 12th century by Georgia's national poet Shota Rustaveli.[1] A definitive work of the Georgian Golden Age, the poem consists of over 1600 Rustavelian Quatrains and is considered to be a masterpiece of the Georgian literature.[2] Until the early 20th century, a copy of this poem was part of the dowry of every bride."
+  },
+    {
+      "author": "J.R.R. Tolkien",
+      "imageLink": "./assets/image/2.jpg",
+      "title": "The Lord of the Rings",
+      "price": 23.99,
+      "description": "The Lord of the Rings is an epic[1] high-fantasy novel[a] by English author and scholar J. R. R. Tolkien. Set in Middle-earth, intended to be Earth at some distant time in the past  the story began as a sequel to Tolkien's 1937 children's book The Hobbit, but eventually developed into a much larger work."
+    },
+    {
+      "author": "Leo Tolstoy",
+      "imageLink": "./assets/image/3.jpg",
+      "title": "Anna Karenina",
+      "price": 16.99,
+      "description": "Anna Karenina (Russian: «Анна Каренина», IPA: [ˈanːə kɐˈrʲenʲɪnə])[1] is a novel by the Russian author Leo Tolstoy, first published in book form in 1878. Widely considered to be one of the greatest works of literature ever written,[2] Tolstoy himself called it his first true novel."
+    },
+    {
+      "author": "Johann Wolfgang von Goethe",
+      "imageLink": "./assets/image/4.jpg",
+      "title": "Goethe's Faust",
+      "price": 19.84,
+      "description": "Faust is a tragic play in two parts by Johann Wolfgang von Goethe, usually known in English as Faust, Part One and Faust, Part Two. Nearly all of Part One and the majority of Part Two are written in rhymed verse. Although rarely staged in its entirety"
+    },
+    {
+      "author": "Erich Maria Remarque",
+      "imageLink": "./assets/image/5.jpg",
+      "title": "Arch of Triumph ",
+      "price": 14.99,
+      "description": "Arch of Triumph (German: Arc de Triomphe) is a 1945 novel by Erich Maria Remarque about stateless refugees in Paris before World War II. Written during his exile in the United States (1939–1948), it was his second worldwide bestseller, after All Quiet on the Western Front"
+    },
+    {
+      "author": "F. Scott Fitzgerald",
+      "imageLink": "./assets/image/6.jpg",
+      "title": "The Great Gatsby",
+      "price": 18.99,
+      "description": "The Great Gatsby is a 1925 novel by American writer F. Scott Fitzgerald. Set in the Jazz Age on Long Island, near New York City, the novel depicts first-person narrator Nick Carraway's interactions with mysterious millionaire Jay Gatsby and Gatsby's obsession to reunite with his former lover, Daisy Buchanan."
+    },
+    {
+      "author": "Fyodor Dostoevsky",
+      "imageLink": "./assets/image/7.jpg",
+      "title": "The Brothers Karamazov",
+      "price": 34.99,
+      "description": "The Brothers Karamazov (Russian: Братья Карамазовы, Brat'ya Karamazovy, pronounced [ˈbratʲjə kərɐˈmazəvɨ]), also translated as The Karamazov Brothers, is the last novel by Russian author Fyodor Dostoevsky. Dostoevsky spent nearly two years writing The Brothers Karamazov"
+    },
+    {
+      "author": "Dante Alighieri",
+      "imageLink": "./assets/image/8.jpg",
+      "title": "Divine Comedy",
+      "price": 5.99,
+      "description": "The Divine Comedy (Italian: Divina Commedia Italian pronunciation: [diˈviːna komˈmɛːdja]) is an Italian narrative poem by Dante Alighieri, begun c. 1308 and completed in 1320, a year before his death in 1321. It is widely considered the pre-eminent work in Italian literature[1] and one of the greatest works of world literature."
+    },
+    {
+      "author": "Franz Kafka",
+      "imageLink": "./assets/image/9.jpg",
+      "title": "The Trial",
+      "price": 26.99,
+      "description": "The Trial (German: Der Process,[1] later Der Proceß, Der Prozeß and Der Prozess) is a novel written by Franz Kafka in 1914 and 1915 and published posthumously on 26 April 1925. One of his best known works, it tells the story of Josef K., a man arrested and prosecuted by a remote. "
+    },
+    {
+      "author": "Leo Tolstoy",
+      "imageLink": "./assets/image/10.jpg",
+      "title": "War and Peace",
+      "price": 28.99,
+      "description": "War and Peace (Russian: Война и мир, romanized: Voyna i mir; pre-reform Russian: Война и миръ; [vɐjˈna i ˈmʲir]) is a literary work mixed with chapters on history and philosophy by the Russian author Leo Tolstoy. It was first published serially, then published in its entirety in 1869."
+    }
+  ]

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books Shop</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+   
+  
+  </head>
+  <body>
+    <div class="delivery-form">
+      <form class="form-order">
+        <h1>Please fill in the information</h1>
+        <fieldset class="info-field">
+          <legend>Shipping</legend>
+          <div class="orders">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              class="filed-info"
+              id="name"
+              required
+              placeholder="your name"
+              name="name"
+              minlength="4"
+              onkeypress="return (event.charCode > 64 && 
+              event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"
+            />
+          </div>
+          <div class="orders">
+            <label for="surname">Surname</label>
+            <input
+              type="text"
+              class="filed-info"
+              id="surname"
+              required
+              placeholder="your surname"
+              name="surname"
+              minlength=""
+              onkeypress="return (event.charCode > 64 && 
+              event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"
+            />
+          </div>
+          <div class="orders">
+            <label for="date">Delivery Date</label>
+            <input
+              type="date"
+              class="filed-info"
+              id="date"
+              required
+              min="2022-05-24"
+              name="date"
+            />
+          </div>
+          <div class="orders">
+            <label for="street">Street</label>
+            <input
+              type="text"
+              class="filed-info"
+              id="street"
+              required
+              placeholder="street"
+              name="street"
+              minlength="5"
+            />
+          </div>
+          <div class="orders">
+            <label for="house">House</label>
+            <input
+              type="text"
+              class="filed-info"
+              id="house"
+              required
+              placeholder="house Address"
+              name="house"
+              oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+            />
+          </div>
+          <div class="orders">
+            <label for="flat">Flat</label>
+            <input
+              type="text"
+              class="filed-info"
+              id="flat"
+              placeholder="numbers only, the dash symbol is allowed"
+              name="flat"
+              pattern="(^[1-9]+)(\d*)(-?)([0-9]*$)"
+            />
+          </div>
+        </fieldset>
+        <fieldset class="payment-input">
+          <legend>Choose the payment type</legend>
+          <div class="payment-wrap">
+            <label for="cash" class="cash">Cash</label>
+            <input
+              type="radio"
+              class="payment-type"
+              name="cash or card"
+              id="cash"
+              value="cash"
+            />
+          </div>
+          <div class="payment-wrap">
+            <label for="card" class="card">Card</label>
+            <input
+              type="radio"
+              class="payment-type"
+              name="cash or card"
+              id="card"
+              value="card"
+            />
+          </div>
+        </fieldset>
+        <fieldset class="gift-wrap">
+          <legend>Choose 2 gifts</legend>
+          <label for="pack">Pack as a gift</label>
+          <input
+            type="checkbox"
+            class="gift"
+            id="packGift"
+            value="Pack as a gift"
+            name="checkboxi"
+            onclick="return checkboxFunc()"
+          />
+          <label for="postcard">Add postcard</label>
+          <input
+            type="checkbox"
+            class="gift"
+            id="postcard"
+            value="Add postcard"
+            name="checkboxi"
+            onclick="return checkboxFunc()"
+          />
+          <label for="discount">Provide 2% discount to the next time</label>
+          <input
+            type="checkbox"
+            class="gift"
+            id="discount"
+            value="Provide 2% discount to the next time"
+            name="checkboxi"
+            onclick="return checkboxFunc()"
+          />
+          <label for="penOrPencil">Branded pen or pencil</label>
+          <input
+            type="checkbox"
+            class="gift"
+            id="penOrPencil"
+            value="Branded pen or pencil"
+            name="checkboxi"
+            onclick="return checkboxFunc()"
+          />
+          <script src="text/javascript"></script>
+        </fieldset>
+        <div class="button-wrap">
+          <input type="submit" id="register" value="Confirm" />
+        </div>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
